@@ -21,9 +21,6 @@ body {
   gap: 93px;
   padding: 24px 0 16px 0;
 }
-.menu {
-  border-bottom: 1px solid #ececec;
-}
 
 .container {
   width: 1200px;
@@ -34,7 +31,7 @@ body {
 .section {
   padding: 94px 94px;
 }
-.webstudio {
+.header-logo {
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Raleway";
@@ -43,11 +40,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--black);
 }
-.webstudio > span {
+.header-logo > span {
   color: var(--blue);
   text-decoration: none;
 }
-.link-menu {
+.menu {
   gap: 43px;
   display: flex;
   flex-direction: row;
@@ -58,32 +55,32 @@ body {
   font-weight: 500;
   font-size: 14px;
 }
-.header .link-menu {
+.header .menu {
   list-style: none;
   display: flex;
 }
-.link1 {
+.menu-link1 {
   color: var(--black);
 }
 
-.link:visited {
+.menu-link:visited {
   color: #212121;
 }
-.link:hover,
-.link:focus {
+.menu-link:hover,
+.menu-link:focus {
   color: #2196f3;
   fill: #2196f3;
 }
-.link {
+.menu-link {
   text-decoration: none;
   transition: fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-active {
+.menu-active {
   position: relative;
   color: var(--black);
 }
 
-.link-active::after {
+.menu-active::after {
   position: absolute;
   background-color: var(--blue);
   border-radius: 2px;
@@ -93,7 +90,7 @@ body {
   display: block;
   top: 46px;
 }
-.nav-link:after {
+.menu-nav:after {
   position: absolute;
   background-color: transparent;
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -105,12 +102,12 @@ body {
   transform: translateY(700%);
 }
 
-.nav-link:hover::after,
-.nav-link:focus::after {
+.menu-nav:hover::after,
+.menu-nav:focus::after {
   background-color: var(--blue);
 }
 
-.contact1 {
+.contact-1 {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -119,7 +116,7 @@ body {
   color: var(--gray);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact2 {
+.contact-2 {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -129,50 +126,50 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact1:hover .icon-envelope {
+.contact-1:hover .icon-envelope {
   fill: var(--blue);
 }
 
-.contact1:hover {
+.contact-1:hover {
   color: var(--blue);
 }
 
-.contact1:focus {
-  color: var(--blue);
-  fill: var(--blue);
-  outline: none;
-}
-
-.contact1:focus .icon-envelope {
-  fill: var(--blue);
-}
-
-.contact2:hover {
-  color: var(--blue);
-}
-
-.contact2:hover .icon-smartphone {
-  fill: var(--blue);
-}
-
-.contact2:focus {
+.contact-1:focus {
   color: var(--blue);
   fill: var(--blue);
   outline: none;
 }
 
-.contact2:focus .icon-smartphone {
+.contact-1:focus .contact-icon-envelope {
   fill: var(--blue);
 }
 
-.icon-envelope {
+.contact-2:hover {
+  color: var(--blue);
+}
+
+.contact-2:hover .contact-icon-smartphone {
+  fill: var(--blue);
+}
+
+.contact-2:focus {
+  color: var(--blue);
+  fill: var(--blue);
+  outline: none;
+}
+
+.contact-2:focus .contact-icon-smartphone {
+  fill: var(--blue);
+}
+
+.contact-icon-envelope {
   margin: 0 10px 0 0;
   fill: var(--gray);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-smartphone {
+.contact-icon-smartphone {
   margin: 0 10px 0 0;
   fill: var(--gray);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -186,7 +183,7 @@ body {
 }
 
 /*Main-------------------------------------------------------------------------*/
-.main {
+.background {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -199,7 +196,7 @@ body {
   background: rgba(47, 48, 58, 40%) url(../images/wall1.jpg);
 }
 
-.title {
+.background-title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
@@ -207,7 +204,7 @@ body {
   line-height: 1.36;
   color: var(--white);
 }
-.button1 {
+.background-button1 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -250,7 +247,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--gray);
 }
-.str-icon {
+.strengths-icon {
   width: 270px;
   height: 120px;
   background-color: var(--white);
@@ -261,8 +258,8 @@ body {
   justify-content: center;
 }
 
-.str-icon:hover,
-.str-icon:focus {
+.strengths:hover,
+.strengths:focus {
   border: solid var(--blue);
   fill: var(--blue);
 }
